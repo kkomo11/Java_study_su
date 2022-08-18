@@ -7,6 +7,10 @@
 	<title>Home</title>
 </head>
 <body>
+	<a href="bankMembers/login">로그인</a>
+	<a href="bankMembers/join">회원가입</a>
+	<a href="bankMembers/search">찾기</a>
 	
+	<a href="bankBook/list">리스트</a>
 </body>
 </html>
