@@ -16,6 +16,6 @@
 		<a href="bankMembers/logout">로그아웃</a>	
 	</c:if>
 	<a href="bankMembers/search">찾기</a>
-	<a href="bankBook/list">리스트</a>
+	<a href="bankbook/list">리스트</a>
 </body>
 </html>
