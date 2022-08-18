@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+		    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.iu.start.bankBook.BankBookDAO">
+	<select id="getList" resultType="com.iu.start.bankBook.BankBookDTO">
+		SELECT * FROM BANKBOOK
+	</select>
+	
+	<insert id="setBankBook" parameterType="com.iu.start.bankBook.BankBookDTO">
+		INSERT INTO BANKBOOK VALUES (#{bookNum}, #{bookName}, #{bookRate}, 1)
+	</insert>
+	
+	<select id="getDetail" parameterType="com.iu.start.bankBook.BankBookDTO"
+		resultType="com.iu.start.bankBook.BankBookDTO">
+		SELECT * FROM BANKBOOK WHERE BOOKNUM = #{bookNum}
+	</select>
+	
+	<delete id="setdelete" parameterType="com.iu.start.banbook.BankBookDTO">
+		DELETE BANKBOOK WHERE BOOKNUM = #{bookNum}
+	</delete>
+	
+	<update id="setBankBook" parameterType="com.iu.start.bankBook.BankBookDTO">
+		UPDATE BANKBOOK SET BOOKNAME = #{bookName}, BOOKRATE = #{bookRate} WHERE BOOKNUM = #{bookNum}	
+	</update>
+</mapper>
