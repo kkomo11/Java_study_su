@@ -20,7 +20,7 @@
 		DELETE BANKBOOK WHERE BOOKNUM = #{bookNum}
 	</delete>
 	
-	<update id="setBankBook" parameterType="com.iu.start.bankBook.BankBookDTO">
+	<update id="setUpdate" parameterType="com.iu.start.bankBook.BankBookDTO">
 		UPDATE BANKBOOK SET BOOKNAME = #{bookName}, BOOKRATE = #{bookRate} WHERE BOOKNUM = #{bookNum}	
 	</update>
 </mapper>
